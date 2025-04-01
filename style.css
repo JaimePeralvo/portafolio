@@ -31,7 +31,7 @@ nav {
 .logo {
     width: 150px;
     height: 200px;
-    background-image: url('../img/logo.svg');
+    background-image: url('img/logo.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
