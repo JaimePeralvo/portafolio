@@ -1,0 +1,80 @@
+.pinterest-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas en desktop */
+    gap: 30px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.5s ease;
+    aspect-ratio: 1/1.3; /* Proporción tipo Pinterest */
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(207, 210, 252, 0.8), transparent);
+    color: rgb(1, 1, 1);
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay p {
+    margin: 0;
+    font-size: 16px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+/* Versión tablet */
+@media (max-width: 1024px) {
+    .pinterest-gallery {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    }
+}
+
+/* Versión móvil */
+@media (max-width: 768px) {
+    .pinterest-gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .overlay {
+        padding: 10px;
+        opacity: 1; /* Mostrar siempre en móvil */
+    }
+    
+    .overlay p {
+        font-size: 14px;
+    }
+}
