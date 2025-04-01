@@ -311,11 +311,13 @@ footer {
     text-align: center;
     width: 100%;
     margin-top: auto; /* Esto es clave */
+
 }
 
 footer p {
     font-size: 30px;
     margin: 0;
+    padding-top: px;
 }
 
 
@@ -326,20 +328,21 @@ footer p {
         gap: px;
         padding: px;
         width: 400px;
+        margin-bottom: 100px;
     }
     
-    .columna-imagen, .columna-texto {
-        width: %;
-    }
+    
+        
+    
     .columna-imagen{
         width: 100%;
         position: relative;
-        top:-20px
+        top:0px
     }
     .columna-texto{
         width: 90%;
-        margin-left: -50px;
-        background-color: rgb(253, 250, 245,0.8);
+        margin-left: -20px;
+        background-color: rgb(253, 250, 245,);
         border-radius: 8px;
     }
     .columna-texto p {
@@ -362,5 +365,8 @@ footer p {
         min-height: 150vh;
         margin: 0;
         padding: 0;
+    }
+    footer {
+        margin-top: 100px;
     }
 }
