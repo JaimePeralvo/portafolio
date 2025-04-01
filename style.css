@@ -101,7 +101,7 @@ nav {
     position: fixed;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 45%;
     height: 100vh;
     background-color: #141414;
     padding: 80px 40px;
@@ -199,7 +199,7 @@ nav {
         margin-left: 25px;
     }
     .menu {
-        width: 80%;
+        width: 40%;
         padding: 0px 0px;
         margin-left: 0px;
     }
@@ -227,8 +227,10 @@ nav {
 .descripcion {
     display: flex; /* Crea un contenedor flexible */
     align-items: center; /* Centra verticalmente los elementos */
-    gap: 30px; /* Espacio entre columnas */
-    max-width: 1000px; /* Ancho máximo del contenedor */
+    gap: px; /* Espacio entre columnas */
+    width: 1000px;
+    height: 500px;
+    max-width: auto; /* Ancho máximo del contenedor */
     margin: 0 auto; /* Centra el contenedor */
     padding: 10px;
     box-sizing: border-box;
@@ -241,20 +243,26 @@ nav {
 }
 .columna-imagen {
     flex: 1; /* Ocupa 1 parte del espacio disponible */
-    padding: 50px;
+    padding: 10px;
+    height: 500px;
 }
 
 .columna-imagen img {
-    width: 100%; /* La imagen ocupa todo el ancho de su columna */
-    height: auto; /* Mantiene la proporción de la imagen */
+    width: 90%; /* La imagen ocupa todo el ancho de su columna */
+    height: ; /* Mantiene la proporción de la imagen */
     border-radius: 2px; /* Bordes redondeados opcionales */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra opcional */
+    box-shadow: 0 4px 8px rgba(0,0,0,0 ); /* Sombra opcional */
     padding: 0px;
+    margin-right: ;
 
 }
 
 .columna-texto {
     flex: 1; /* Ocupa 1 parte del espacio disponible */
+    margin-right: -50px;
+    background-color: rgb(253, 250, 245,0.8);
+    border-radius: 8px;
+    padding: 20px;
 }
 
 .columna-texto p {
@@ -263,28 +271,96 @@ nav {
     margin: 0;
     text-transform: uppercase;
     font-size: 26px;
+
+
     
 }
+
+
+
+
+/* Elimina estos estilos del footer actual */
+.footer {
+    margin-top: auto;
+    background-color: #c4a6f0;
+    position: absolute; /* ¡QUITAR ESTO! */
+    width:100%;
+    height: 50px;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Reemplaza con esto: */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex: 1;
+    /* Esto empujará el footer hacia abajo */
+}
+
+footer {
+    background-color: #c4a6f0;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Esto es clave */
+}
+
+footer p {
+    font-size: 30px;
+    margin: 0;
+}
+
 
 /* Versión responsive para móviles */
 @media (max-width: 768px) {
     .descripcion {
         flex-direction: column; /* Apila las columnas en móvil */
-        gap: 10px;
-        padding: 10px;
+        gap: px;
+        padding: px;
+        width: 400px;
     }
     
     .columna-imagen, .columna-texto {
+        width: %;
+    }
+    .columna-imagen{
         width: 100%;
+        position: relative;
+        top:-20px
+    }
+    .columna-texto{
+        width: 90%;
+        margin-left: -50px;
+        background-color: rgb(253, 250, 245,0.8);
+        border-radius: 8px;
     }
     .columna-texto p {
         line-height: 1;
         color: #333;
         margin: 0;
+        padding-left:px;
+        margin-right: px;
+        margin-top: 30px;
         text-transform: uppercase;
         font-size: 20px;
-        padding: 25px;
+        padding-left:55px;
+        padding-right: 55px;
         text-align: left;                                                                                                       
-        
+        padding-bottom: 20px;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 150vh;
+        margin: 0;
+        padding: 0;
     }
 }
