@@ -334,7 +334,15 @@ footer p {
         position: relative;
         top:0px
     }
-    .columna-texto{
+    .columna-imagen img {
+    width: 340px;
+    
+    
+    
+    
+    }
+
+        .columna-texto{
         width: 90%;
         margin-left: -20px;
         background-color: rgb(253, 250, 245,);
@@ -397,11 +405,13 @@ footer p {
     font-size: 30px;
     margin-bottom: 20px;
     text-transform: uppercase;
+    margin-left: 20px;
   }
   
   /* Items de habilidad */
   .habilidad-item {
     margin-bottom: 35px;
+    margin-left: 20px;
   }
   
   .habilidad-texto {
@@ -469,7 +479,7 @@ footer p {
       /* Ajustes para la barra de carga */
       .loading-container {
         display: inline-block;
-        width: calc(80% - 130px); /* Resta el ancho del texto */
+        width: calc(100% - 130px); /* Resta el ancho del texto */
         vertical-align: middle;
         
       }
