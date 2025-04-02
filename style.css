@@ -467,20 +467,37 @@ footer p {
         margin-bottom:50px;
 
       }
+      .habilidades-cv h3 {
+        font-family: 'Webjaix-Regular';
+        color: #333;
+        font-size: 30px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        margin-left: 20px;
+      }
       
+      /* Items de habilidad */
+      .habilidad-item {
+        font-family: 'Webjaix-Regular';
+        color: #333;
+        margin-bottom: 35px;
+        margin-left: 20px;
+      }
       .habilidad-texto {
         display: inline-block;
         width: 120px;
-        font-family: Arial, sans-serif;
-        font-size: 18px;
+        font-family: 'Webjaix-Regular';
+        color: #333;
+        font-size: 30px;
         color: #141414;
       }
       
       /* Ajustes para la barra de carga */
       .loading-container {
         display: inline-block;
-        width: calc(100% - 130px); /* Resta el ancho del texto */
+        width: calc(90% - 130px); /* Resta el ancho del texto */
         vertical-align: middle;
+        margin-left: 30PX;
         
       }
       
