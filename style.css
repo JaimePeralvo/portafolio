@@ -228,7 +228,7 @@ nav {
     display: flex; /* Crea un contenedor flexible */
     align-items: center; /* Centra verticalmente los elementos */
     gap: px; /* Espacio entre columnas */
-    width: 1000px;
+    width: 1300px;
     height: 500px;
     max-width: auto; /* Ancho máximo del contenedor */
     margin: 0 auto; /* Centra el contenedor */
@@ -248,7 +248,7 @@ nav {
 }
 
 .columna-imagen img {
-    width: 90%; /* La imagen ocupa todo el ancho de su columna */
+    width: 80%; /* La imagen ocupa todo el ancho de su columna */
     height: ; /* Mantiene la proporción de la imagen */
     border-radius: 2px; /* Bordes redondeados opcionales */
     box-shadow: 0 4px 8px rgba(0,0,0,0 ); /* Sombra opcional */
@@ -263,6 +263,7 @@ nav {
     background-color: rgb(253, 250, 245,0.8);
     border-radius: 8px;
     padding: 20px;
+    
 }
 
 .columna-texto p {
@@ -287,7 +288,7 @@ nav {
     width:100%;
     height: 50px;
     align-items: center;
-    padding: 20px;
+    padding:20px;
     text-align: center;
 }
 
@@ -295,7 +296,7 @@ nav {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 85vh;
     margin: 0;
     padding: 0;
 }
@@ -305,19 +306,13 @@ main {
     /* Esto empujará el footer hacia abajo */
 }
 
-footer {
-    background-color: #c4a6f0;
-    padding: 0px;
-    text-align: center;
-    width: 100%;
-    margin-top: auto; /* Esto es clave */
 
-}
 
 footer p {
     font-size: 30px;
     margin: 0;
-    padding-top: px;
+    padding: px;
+    margin-top: 20px;
 }
 
 
@@ -327,8 +322,8 @@ footer p {
         flex-direction: column; /* Apila las columnas en móvil */
         gap: px;
         padding: px;
-        width: 400px;
-        margin-bottom: 100px;
+        width: 380px;
+        margin-bottom: 80px;
     }
     
     
@@ -354,19 +349,146 @@ footer p {
         margin-top: 30px;
         text-transform: uppercase;
         font-size: 20px;
-        padding-left:55px;
-        padding-right: 55px;
+        padding-left:25px;
+        padding-right: 25px;
         text-align: left;                                                                                                       
         padding-bottom: 20px;
     }
     body {
         display: flex;
         flex-direction: column;
-        min-height: 150vh;
+        min-height: 200vh;
         margin: 0;
         padding: 0;
     }
     footer {
-        margin-top: 100px;
+        margin-top: 0px;
+        font-size: 25px;
+        margin: 0;
+        padding: px;
+        margin-top: 0px;
+        align-items: center;
+        padding:0px;
+        text-align: center;
     }
+    fotter p{
+        margin-top: 100px;
+        align-items: center;
+        text-align: center;
+    }
+    
 }
+
+/*BARRA*/
+/* Contenedor de habilidades */
+.habilidades-cv {
+    flex-direction: column;
+    margin-top: 50px; /* Espacio respecto al div .descripcion */
+    padding: 20px;
+    background:  rgb(253, 250, 245, 0.8); /* Fondo coherente con tu estilo */
+    border-radius: 5px;
+    margin-left: 100px;
+    width:280px;
+  }
+  
+  .habilidades-cv h3 {
+    font-family: 'Webjaix-Regular';
+    color: #333;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  /* Items de habilidad */
+  .habilidad-item {
+    margin-bottom: 35px;
+  }
+  
+  .habilidad-texto {
+    display: inline-block;
+    width: 120px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #141414;
+  }
+  
+  /* Ajustes para la barra de carga */
+  .loading-container {
+    display: inline-block;
+    width: calc(100% - 130px); /* Resta el ancho del texto */
+    vertical-align: middle;
+    
+  }
+  
+  .loading-bar {
+    height: 20px; /* Más delgada para CV */
+    background: rgb(207, 210, 252);
+    border-radius: 9px;
+  }
+  
+  .progress {
+    height:100%;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    animation: fillProgress 5s ease-in-out forwards;
+    border-radius: 9px;
+  }
+  
+  .percentage {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  
+  /* Animación */
+  @keyframes fillProgress {
+    from { width: 0%; }
+    to { width: var(--target-width); } /* Usa el width definido en el HTML */
+  }
+
+  @media (max-width: 768px) {
+    .habilidades-cv  {
+        width: 330px;
+        border-radius: 10px;
+      margin-left: 25px;
+      }
+      
+      /* Items de habilidad */
+      .habilidad-item {
+        margin-bottom:50px;
+
+      }
+      
+      .habilidad-texto {
+        display: inline-block;
+        width: 120px;
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        color: #141414;
+      }
+      
+      /* Ajustes para la barra de carga */
+      .loading-container {
+        display: inline-block;
+        width: calc(80% - 130px); /* Resta el ancho del texto */
+        vertical-align: middle;
+        
+      }
+      
+      .loading-bar {
+        height: 20px; /* Más delgada para CV */
+        background: #e0e0e0;
+      }
+      
+      .progress {
+        height: 100%;
+        background: linear-gradient(90deg, #6a11cb, #2575fc);
+        animation: fillProgress 2s ease-in-out forwards;
+        border-radius: 9px;
+      }
+      
+      .percentage {
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 16px;
+      }
+    }
