@@ -508,7 +508,7 @@ footer p {
       
       .progress {
         height: 100%;
-        background: linear-gradient(90deg, #6a11cb, #2575fc);
+        background: linear-gradient(90deg, #744c7f, #cfa8f1);
         animation: fillProgress 2s ease-in-out forwards;
         border-radius: 9px;
       }
