@@ -315,7 +315,15 @@ footer p {
     margin-top: 20px;
 }
 
-
+@media  (max-width: 640px){
+    .descripcion {
+        flex-direction: column; /* Apila las columnas en móvil */
+        gap: px;
+        padding: px;
+        width: 280px;
+        margin-bottom: 80px;
+    }
+}
 /* Versión responsive para móviles */
 @media (max-width: 768px) {
     .descripcion {
