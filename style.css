@@ -546,4 +546,10 @@ footer p {
         .columna-imagen img {
         width: 300px;
         }
-    }
+
+        .habilidades-cv  {
+            width: 17rem;
+            border-radius: 10px;
+          margin-left: 25px;
+          }    
+        }
