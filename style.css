@@ -534,7 +534,7 @@ footer p {
         body {
             display: flex;
             flex-direction: column;
-            min-height: 300vh;
+            min-height: 600vh;
             margin: 0;
             padding: 0;
         }
