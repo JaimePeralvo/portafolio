@@ -538,4 +538,12 @@ footer p {
             margin: 0;
             padding: 0;
         }
+        .columna-imagen{
+            width: 100%;
+            position: relative;
+            top:0px
+        }
+        .columna-imagen img {
+        width: 300px;
+        }
     }
