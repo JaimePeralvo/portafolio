@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMKY</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="comic.css">
 </head>
 <body>
     <nav>
@@ -57,62 +58,57 @@
             </div>
         </div>
     </nav>
-    <main>
-    <div class="descripcion">
-        <div class="columna-imagen">
-            <img src="img/about.png" alt="Descripción de la imagen">
+    <div class="book">
+    <div class="pages" id="pages">
+        <!-- Portada -->
+        <div class="page cover" id="cover">
+            
+            <img src="img/pag1.jpg" alt="Portada del libro">
+           
         </div>
-        <div class="columna-texto">
-            <p> Diseñador grafico con mas de 10 años de experiencia en el sector textil, egresado 
-                de la ESPOL en Guayaquil y actualmente radicado en Quito. Mi trabajo abarca desde branding e
-                ilustracion digital hasta pintura al oleo, acuarela y ceramica, combinando arte tradicional 
-                con tecnicas modernas. Ademas del diseño, tengo conocimientos en marketing, 
-                fusionando creatividad y tecnología. Me apasiona explorar nuevas formas de expresion 
-                visual y funcional, siempre buscando proyectos innovadores donde pueda aportar mi vision 
-                versatil. ¡Conectate conmigo y hablemos de como puedo ayudar a materializar tus ideas!</p>
+        
+        <!-- Página 1 (izquierda) y 2 (derecha) -->
+        <div class="page left" id="page1">
+            <h2>Página 1</h2>
+            <img src="img/pag1.jpg" alt="Contenido página 1">
+            <p></p>
         </div>
-       
-
-    
-    
-        <!-- Nuevo bloque: Habilidades con barras de progreso -->
-        <div class="habilidades-cv">
-          <h3>HABILIDADES TECNICAS</h3>
-          
-          <!-- Barra 1 -->
-          <div class="habilidad-item">
-            <span class="habilidad-texto">ILLUSTRATOR</span>
-            <div class="loading-container">
-              <div class="loading-bar">
-                <div class="progress" style="width: 90%;"></div>
-              </div>
-              <div class="percentage">90%</div>
-            </div>
-          </div>
-          
-          <!-- Barra 2 -->
-          <div class="habilidad-item">
-            <span class="habilidad-texto">PHOTOSHOP</span>
-            <div class="loading-container">
-              <div class="loading-bar">
-                <div class="progress" style="width: 80%;"></div>
-              </div>
-              <div class="percentage">100%</div>
-            </div>
-          </div>
-          
-          <!-- Añade más habilidades según necesites -->
+        
+        <div class="page right" id="page2">
+            <h2>Página 2</h2>
+            <img src="img/pag2.jpg" alt="Contenido página 2">
+            <p></p>
         </div>
-      </div>
-      <!-- Añade esto justo después de la etiqueta <nav> -->
-
-    <script src="index.js"></script>
-    </main>
-<footer>
-    <div class="footer">
-        <P> @james_peralvo.art. Todos los derechos reservados.</P>
+        
+        <!-- Página 3 (izquierda) y 4 (derecha) -->
+        <div class="page left" id="page3">
+            <h2>Página 3</h2>
+            <img src="imagenes/pagina3.jpg" alt="Contenido página 3">
+            <p>Este es el contenido de la tercera página.</p>
+        </div>
+        
+        <div class="page right" id="page4">
+            <h2>Página 4</h2>
+            <img src="imagenes/pagina4.jpg" alt="Contenido página 4">
+            <p>Este es el contenido de la cuarta página.</p>
+        </div>
+        
+        <!-- Contraportada -->
+        <div class="page back-cover" id="back-cover">
+            <h1>Fin del Libro</h1>
+            <img src="imagenes/contraportada.jpg" alt="Contraportada">
+            <p>Gracias por leer</p>
+        </div>
     </div>
-</footer>
-</body>
+</div>
 
-</html>
+<div class="controls">
+    <button id="prev-btn">Anterior</button>
+    <button id="next-btn">Siguiente</button>
+</div>
+    
+    <!-- Añadido jQuery que necesita PageFlip -->
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.1/turn.min.js"></script>
+    <script src="comij.js"></script>
