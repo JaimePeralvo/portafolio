@@ -523,7 +523,7 @@ footer p {
 
 
 
-    @media  (max-width: 640px){
+    @media  (max-width: 600px){
         .descripcion {
             flex-direction: column; /* Apila las columnas en móvil */
             gap: px;
@@ -544,6 +544,6 @@ footer p {
             top:0px
         }
         .columna-imagen img {
-        width: 300px;
+        width: 200rem;
         }
     }
