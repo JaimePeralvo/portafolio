@@ -528,7 +528,7 @@ footer p {
             flex-direction: column; /* Apila las columnas en móvil */
             gap: px;
             padding: px;
-            width: 250px;
+            width: 300px;
             margin-bottom: 50px;
         }
         body {
