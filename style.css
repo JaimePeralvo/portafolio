@@ -315,15 +315,7 @@ footer p {
     margin-top: 20px;
 }
 
-@media  (max-width: 640px){
-    .descripcion {
-        flex-direction: column; /* Apila las columnas en móvil */
-        gap: px;
-        padding: px;
-        width: 280px;
-        margin-bottom: 80px;
-    }
-}
+
 /* Versión responsive para móviles */
 @media (max-width: 768px) {
     .descripcion {
@@ -526,4 +518,24 @@ footer p {
         margin-left: 10px;
         font-size: 16px;
       }
+    }
+
+
+
+
+    @media  (max-width: 640px){
+        .descripcion {
+            flex-direction: column; /* Apila las columnas en móvil */
+            gap: px;
+            padding: px;
+            width: 250px;
+            margin-bottom: 50px;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 300vh;
+            margin: 0;
+            padding: 0;
+        }
     }
