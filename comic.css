@@ -6,7 +6,7 @@ body{
 .book {
     width: 70vw;
     height: 77vh;
-    perspective: 2000px;
+    perspective: 1000px;
     margin: vh auto;
     margin-left: 27rem;
     align-items: center;
@@ -74,11 +74,11 @@ button {
 
 body{
 
-    justify-content: left;
+    justify-content: center;
     
 }
 .book {
-    width: 200vw;
+    width: 70vw;
     height: 77vh;
    
     margin: 10 auto; 
@@ -87,8 +87,8 @@ body{
 }
 
 .pages {
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
     position: relative;
     transform-style: preserve-3d;
 }
