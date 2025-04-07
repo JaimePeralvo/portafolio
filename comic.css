@@ -69,3 +69,66 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
+
+@media (min-width: 768px) {
+
+body{
+
+    justify-content: center;
+    
+}
+.book {
+    width: 69vw;
+    height: 77vh;
+   
+    margin: 150 auto; 
+    align-items: center;
+    justify-content: center;
+}
+
+.pages {
+    width: auto;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.page {
+    position: absolute;
+    width: 32%;
+    height: 100%;
+    top: 0;
+    
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    box-sizing: border-box;
+    transform-origin: left center;
+    transition: transform 1s;
+}
+
+
+
+.controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background: #5a3921;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+
+
+}
