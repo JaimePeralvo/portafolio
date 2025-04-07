@@ -8,7 +8,7 @@ body{
     height: 77vh;
     perspective: 1000px;
     margin: vh auto;
-    margin-left: 1rem;
+    margin-left: 0rem;
     align-items: center;
     justify-content: center;
 }
