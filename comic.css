@@ -74,14 +74,14 @@ button {
 
 body{
 
-    justify-content: center;
+    justify-content: left;
     
 }
 .book {
-    width: 69vw;
+    width: 200vw;
     height: 77vh;
    
-    margin: 150 auto; 
+    margin: 10 auto; 
     align-items: center;
     justify-content: center;
 }
@@ -95,7 +95,7 @@ body{
 
 .page {
     position: absolute;
-    width: 32%;
+    width: 100%;
     height: 100%;
     top: 0;
     
