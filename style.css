@@ -406,19 +406,20 @@ footer p {
     margin-bottom: 20px;
     text-transform: uppercase;
     margin-left: 20px;
+    text-align: center;
   }
   
   /* Items de habilidad */
   .habilidad-item {
     margin-bottom: 35px;
-    margin-left: 20px;
+    margin-left: 0px;
   }
   
   .habilidad-texto {
     display: inline-block;
     width: 120px;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
+    font-family: 'Webjaix-Regular';
+    font-size: 28px;
     color: #141414;
   }
   
@@ -550,7 +551,8 @@ footer p {
         .habilidades-cv  {
             width: 15rem;
             border-radius: 10px;
-          margin-left: 25px;
+            margin-left: 5px;
+
           }    
         }
 
@@ -617,12 +619,14 @@ footer p {
             font-size: 24px;
             font-weight: bold;
             color: #333;
+            margin-left: 10PX;
         }
         .percentageWEB {
             text-align:center ;
             font-size: 24px;
             font-weight: bold;
             color: #333;
+            margin-left: 10PX;
         }
 
         @keyframes fill {
