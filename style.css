@@ -396,7 +396,7 @@ footer p {
     background:  rgb(253, 250, 245, 0.8); /* Fondo coherente con tu estilo */
     border-radius: 5px;
     margin-left: 100px;
-    width:280px;
+    width:380px;
   }
   
   .habilidades-cv h3 {
@@ -552,4 +552,115 @@ footer p {
             border-radius: 10px;
           margin-left: 25px;
           }    
+        }
+
+
+.loader-container {
+            display:flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .loader-containerWEB {
+            display:flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loader {
+            width: 150px;
+            height: 20px;
+            background: #e0e0e0;
+            border-radius: 10px;
+            margin: 5px 0;
+            overflow: hidden;
+        }
+        .loaderWEB{
+            width: 150px;
+            height: 20px;
+            background: #dcdada;
+            border-radius: 10px;
+            margin: 5px 0;
+            overflow: hidden;
+
+        }
+
+        .loader-bar {
+            align-items:flex-end 5px;
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #3498db, #f579ca);
+            border-radius: 10px;
+            animation: fill 3s ease-in-out forwards;
+           
+        }
+
+        .loader-barWEB {
+            align-items:flex-end 5px;
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(50deg, #3498db, #f579ca);
+            border-radius: 10px;
+            animation: fill-WEB 3s ease-in-out forwards;
+           
+        }
+
+        .habilidad-texto{
+            text-align:center;
+            margin-left: 20px;
+            margin-right: 20px
+
+        }
+        .percentage {
+            text-align:center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .percentageWEB {
+            text-align:center ;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        @keyframes fill {
+            0% { width: 0%; }
+            25% { width: 25%; }
+            50% { width: 50%; }
+            75% { width: 75%; }
+            100% { width: 100%; }
+        }
+
+        @keyframes fill-WEB {
+           100%{ width: 75%; } /* Se detiene en 75% */
+        }
+
+        /* Animación del número de porcentaje */
+        .percentage::after {
+            content: "0%";
+            animation: count 3s ease-in-out forwards;
+        }
+        .percentageWEB::after {
+            content: "75%";
+            animation: countWEB 3s ease-in-out forwards;
+            display: inline-block;
+        }
+            
+        
+       
+
+        @keyframes count {
+            0% { content: "0%"; }
+            25% { content: "25%"; }
+            50% { content: "50%"; }
+            75% { content: "75%"; }
+            100% { content: "100%"; }
+        }
+        @keyframes countWEB {
+            0% { content: "0%"; }
+            25% { content: "25%"; }
+            50% { content: "50%"; }
+            75% { content: "75%"; } /* Muestra 75% al final */
         }
